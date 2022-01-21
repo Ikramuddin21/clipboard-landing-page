@@ -1,1 +1,1 @@
-# clipboard-landing-page
+# Responsive clipboard landing page
