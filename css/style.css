@@ -2,7 +2,6 @@
 body {
     margin: 0;
     font-family: 'Bai Jamjuree', sans-serif;
-    /* font-size: 18px; */
 }
 
 h1 {
@@ -21,25 +20,11 @@ h3 {
 }
 
 p {
-    color: gray;
+    color: darkgray;
     font-size: 18px;
 }
 
-/* Header section styles */
-.header {
-    text-align: center;
-    padding-top: 130px;
-    background-image: url('../images/bg-header-desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 10px -200px;
-}
-
-.header-area1 {
-    margin-top: 60px;
-}
-
-.header-buttons {
+.buttons {
     margin-top: 40px;
 }
 
@@ -58,9 +43,31 @@ p {
     box-shadow: hsl(171, 66%, 44%) 0px 18px 30px -15px;
 }
 
+.iOS-button:hover {
+    background-color: hsla(171, 66%, 44%, 0.801);
+}
+
 .mac-button {
     background-color: hsl(233, 100%, 69%);
     box-shadow: hsl(233, 100%, 69%) 0px 18px 30px -15px;
+}
+
+.mac-button:hover {
+    background-color: hsla(233, 100%, 69%, 0.801);
+}
+
+/* Header section styles */
+.header {
+    text-align: center;
+    padding-top: 130px;
+    background-image: url('../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10px -200px;
+}
+
+.header-area1 {
+    margin-top: 60px;
 }
 
 .header-area2 {
@@ -73,15 +80,178 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: relative; */
 }
 
-.text-area {
-    /* position: absolute;
-    left: -50px; */
+.search-text-area {
     margin-right: 250px;
 }
 
-.text-area div {
+.search-text-area div {
     margin-bottom: 70px;
+}
+
+/* Access clipboard section styles */
+.access-clipboard-section {
+    text-align: center;
+    margin-top: 140px;
+}
+
+.access-clipboard-section img {
+    margin-top: 80px;
+}
+
+/* Workflow section styles */
+.workflow-section {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.workflow-information-area {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.workflow-information-area div {
+    width: 25%;
+}
+
+.workflow-information-area div img {
+    margin-bottom: 28px;
+}
+
+.blacklists{
+    margin-top: -10px;
+}
+
+.workflow-logo-area {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 180px;
+    margin-bottom: 150px;
+}
+
+.workflow-logo-area img {
+    width: 170px;
+    height: 50px;
+}
+
+/* Footer section styles */
+.footer {
+    background-color: rgba(211, 211, 211, 0.541);
+    margin-top: 140px;
+    padding: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: -250px;
+}
+
+.footer-anchor {
+    display: flex;
+}
+
+.footer-anchor div {
+    margin: 0 80px;
+}
+
+.footer-anchor p a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-anchor p a:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.footer-icons {
+    display: flex;
+}
+
+.footer-icons li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.fab {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.589);
+}
+
+.fab:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+/* Media query */
+
+/* Mobile device */
+@media screen and (max-width: 688px) {
+    .header {
+        background-image: url('../images/bg-header-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        width: auto;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        margin-top: 15px;
+        padding: 12px 0;
+    }
+
+    .header-area1 {
+        width: 100%;
+    }
+
+    .header-area2 {
+        width: 100%;
+    }
+
+    .img-area img {
+        width: 100%;
+    }
+
+    .quick-search-section {
+        flex-direction: column;
+    }
+
+    .workflow-information-area {
+        flex-direction: column;
+    }
+
+    .workflow-logo-area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .workflow-logo-area img {
+        margin: 30px 0;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+    }
+
+    .footer-anchor {
+        flex-direction: column;
+    }
+
 }
