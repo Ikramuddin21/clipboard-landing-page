@@ -1,0 +1,87 @@
+/* Common styles */
+body {
+    margin: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    /* font-size: 18px; */
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 25px;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 5px;
+}
+
+p {
+    color: gray;
+    font-size: 18px;
+}
+
+/* Header section styles */
+.header {
+    text-align: center;
+    padding-top: 130px;
+    background-image: url('../images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10px -200px;
+}
+
+.header-area1 {
+    margin-top: 60px;
+}
+
+.header-buttons {
+    margin-top: 40px;
+}
+
+.button {
+    border: none;
+    border-radius: 25px;
+    margin: 0 5px;
+    padding: 15px 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.iOS-button {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: hsl(171, 66%, 44%) 0px 18px 30px -15px;
+}
+
+.mac-button {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: hsl(233, 100%, 69%) 0px 18px 30px -15px;
+}
+
+.header-area2 {
+    padding-top: 120px;
+}
+
+/* Quick search section styles */
+.quick-search-section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+
+.text-area {
+    /* position: absolute;
+    left: -50px; */
+    margin-right: 250px;
+}
+
+.text-area div {
+    margin-bottom: 70px;
+}
