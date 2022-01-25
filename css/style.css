@@ -1,27 +1,52 @@
 /* Common styles */
-body {
+* {
     margin: 0;
-    font-family: 'Bai Jamjuree', sans-serif;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
 
 h1 {
     font-size: 40px;
-    line-height: 25px;
+    margin-bottom: 10px;
 }
 
 h2 {
     font-size: 35px;
-    line-height: 20px;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-size: 22px;
-    line-height: 5px;
+    margin-bottom: 10px;
 }
 
 p {
     color: darkgray;
-    font-size: 18px;
+}
+
+p small {
+    font-size: 16px;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
 }
 
 .buttons {
@@ -32,9 +57,9 @@ p {
     border: none;
     border-radius: 25px;
     margin: 0 5px;
-    padding: 15px 30px;
+    padding: 17px 35px;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -56,127 +81,134 @@ p {
     background-color: hsla(233, 100%, 69%, 0.801);
 }
 
-/* Header section styles */
-.header {
-    text-align: center;
-    padding-top: 130px;
+.text-box {
+    width: 53%;
+    margin: 0 auto 90px;
+}
+
+.container {
+    width: 1400px;
+}
+
+/* Hero styles */
+.hero {
     background-image: url('../images/bg-header-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 10px -200px;
+    background-position: top;
+    margin-bottom: 120px;
+    padding-top: 130px;
 }
 
-.header-area1 {
-    margin-top: 60px;
+.hero-logo {
+    margin: 30px 0;
 }
 
-.header-area2 {
-    padding-top: 120px;
+.hero-text-box {
+    width: 45%;
 }
 
-/* Quick search section styles */
-.quick-search-section {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
+/* Main styles */
+/* Features styles */
+.features {
     align-items: center;
+    margin-bottom: 120px;
 }
 
-.search-text-area {
-    margin-right: 250px;
+.feature-left {
+    width: 60%;
 }
 
-.search-text-area div {
-    margin-bottom: 70px;
+.feature-left img {
+    position: relative;
+    left: -180px;
 }
 
-/* Access clipboard section styles */
-.access-clipboard-section {
-    text-align: center;
-    margin-top: 140px;
-}
-
-.access-clipboard-section img {
-    margin-top: 80px;
-}
-
-/* Workflow section styles */
-.workflow-section {
-    text-align: center;
-    margin-top: 70px;
-}
-
-.workflow-information-area {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 80px;
-}
-
-.workflow-information-area div {
+.feature-right {
     width: 25%;
+    transform: translateX(-50px);
 }
 
-.workflow-information-area div img {
-    margin-bottom: 28px;
+.feature-right div {
+    margin-bottom: 75px;
 }
 
-.blacklists{
-    margin-top: -10px;
+/* Clipboard style */
+.clipboard {
+    margin-bottom: 80px;
 }
 
-.workflow-logo-area {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 180px;
+/* Workflow styles */
+.workflow {
     margin-bottom: 150px;
 }
 
-.workflow-logo-area img {
-    width: 170px;
-    height: 50px;
+.cards {
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card1, .card2, .card3 {
+    width: 25%;
+}
+
+.card1 img, .card2 img, .card3 img {
+    margin-bottom: 28px;
+}
+
+.card1 {
+    margin-top: -8px;
+}
+
+/* Clients part styles */
+.client-logo {
+    width: 90%;
+    margin: 0 auto 150px;
+}
+
+.client-logo img {
+    margin: 0 40px;
+    display: inline-block;
 }
 
 /* Footer section styles */
 .footer {
-    background-color: rgba(211, 211, 211, 0.541);
     margin-top: 140px;
-    padding: 20px;
+    padding: 35px;
+    background-color: rgba(211, 211, 211, 0.541);
 }
 
 .footer-nav {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .footer-logo {
     width: 50px;
     height: 50px;
-    margin-right: -250px;
 }
 
-.footer-anchor {
-    display: flex;
+.footer-ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 50px;
+    transform: translateX(-50px);
 }
 
-.footer-anchor div {
-    margin: 0 80px;
+.footer-ul li {
+    list-style: none;
 }
 
-.footer-anchor p a {
+.footer-ul li a {
     text-decoration: none;
     color: gray;
 }
 
-.footer-anchor p a:hover {
+.footer-ul li a:hover {
     color: hsl(171, 66%, 44%);
 }
 
-.footer-icons {
-    display: flex;
-}
-
-.footer-icons li {
+.social-media li {
     list-style: none;
     margin: 0 15px;
 }
@@ -194,64 +226,170 @@ p {
 
 /* Mobile device */
 @media screen and (max-width: 688px) {
-    .header {
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .text-box {
+        width: 90%;
+    }
+    
+    .hero {
         background-image: url('../images/bg-header-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-        width: auto;
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: column;
+    .hero-text-box {
+        width: 90%;
     }
 
     .button {
-        margin-top: 15px;
-        padding: 12px 0;
+        margin: 10px 0;
+        width: 80%;
     }
 
-    .header-area1 {
-        width: 100%;
-    }
-
-    .header-area2 {
-        width: 100%;
-    }
-
-    .img-area img {
-        width: 100%;
-    }
-
-    .quick-search-section {
+    .features {
         flex-direction: column;
+        text-align: center;
     }
 
-    .workflow-information-area {
-        flex-direction: column;
+    .feature-left {
+        width: 90%;
+        margin-bottom: 50px;
     }
 
-    .workflow-logo-area {
+    .feature-left img {
+        left: 0;
+    }
+
+    .feature-right {
+        width: 90%;
+        margin: 0;
+        transform: translateX(0);
+    }
+
+    .feature-right div {
+        margin-bottom: 50px;
+    }
+
+    .clipboard img {
+        width: 90%;
+    }
+
+    .workflow {
+        margin-bottom: 100px;
+    }
+
+    .cards {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
-    .workflow-logo-area img {
+    .card1, .card2, .card3 {
+        width: 90%;
         margin: 30px 0;
     }
 
+    .client-logo img {
+        display: block;
+        margin: 0 auto 90px;
+    }
+
     .footer {
-        width: 100%;
+        text-align: center;
+        padding: 50px;
     }
 
     .footer-nav {
         flex-direction: column;
     }
 
-    .footer-anchor {
-        flex-direction: column;
+    .footer-ul {
+        grid-template-columns: 1fr;
+        margin: 50px 0;
+        padding: 0;
+        transform: translateX(0);
     }
 
+    .social-media {
+        padding: 0;
+    }
+}
+
+/* Tablet device */
+@media screen and (min-width: 689px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+     .text-box {
+        width: 70%;
+    }
+
+    .hero-text-box {
+        width: 70%;
+    }
+
+    .features {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-left {
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+
+    .feature-left img {
+        width: 90%;
+        left: 0;
+    }
+
+    .feature-right {
+        width: 90%;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+
+    .feature-right div {
+        margin-bottom: 50px;
+    }
+
+    .clipboard img {
+        width: 80%;
+    }
+
+    .client-logo img {
+        margin: 15px;
+    }
+
+    .footer-ul {
+        grid-template-columns: 1fr;
+        transform: translateX(0);
+    }
+
+    .social-media {
+        padding: 0;
+    }
+}
+
+/* Small laptop */
+@media screen and (min-width: 1201px) and (max-width: 1420px) {
+    .container {
+        width: 100%;
+    }
+
+    .client-logo img {
+        margin: 20px;
+    }
 }
